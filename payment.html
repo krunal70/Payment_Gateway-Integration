@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<style>
+    .form{
+        margin: 200px 150px 200px 650px;
+    }
+
+    h1{
+        top: 40%;
+        left: 25%;
+        font: bold;
+        background-color: whitesmoke;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        position: absolute;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        background-image: url('images/pay.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 100% 100%;
+        font-family: 'Montserrat';
+    }
+
+
+    .navbar-brand{
+      font-size: 40px;
+      background-color: calc();
+      border-color: blueviolet;
+    }
+
+    .navbar{
+      margin-left: 10%;
+    }
+
+    .nav-item{
+      margin: 5px;
+      padding: 5px;
+      background-color: powderblue;
+      border-color: blueviolet;
+    }
+
+    .nav-item:hover{
+      background-color: rgb(231, 157, 157);
+      font: bold;
+    }
+
+
+    .logo-img{
+      width: 150px;
+      height: 150px;
+      margin-left: 10px;
+      margin-right: 20px;
+    }
+</style>
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-md navbar-primary">
+            <!-- Brand -->
+            <img src="images/logo.jpg" class="logo-img" alt="logo">
+            <button class="navbar-brand"><a href="https://www.thesparksfoundationsingapore.org/" class="nav-link">The Sparks Foundation</a></button>
+          
+            <!-- Navbar links -->
+            <div class="container">
+                <header class="d-flex justify-content-center py-3">
+                  <ul class="nav nav-pills">
+                    <button class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Home</a></button>
+                    <button class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></button>
+                    <button class="nav-item"><a href="about.html" class="nav-link">About Us</a></button>
+                    <button class="nav-item"><a href="payment.html" class="nav-link">Donate Now</a></button>
+    
+                  </ul>
+                </header>
+            </div>
+        </nav>  
+    </div>    
+    <h1>Pay your donation safely with razorpay</h1>
+    <form class="form">
+    <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_IKhDfRLo7njEYB" async> 
+    </script> 
+</form>
+</body>
+</html>
+
+
