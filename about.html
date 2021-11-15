@@ -16,32 +16,6 @@
         padding: 0;
     }
 
-    body{
-        background-image: url('images/background_image.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        background-size: 100% 100%;
-        font-family: 'Montserrat';
-    }
-
-    @media screen and (max-width: 600px) 
-    {
-      .logo-img{
-        margin-bottom: 20px;
-        margin-left: 170px;
-      }
-
-      .nav-item{
-        width: 100%;
-        margin-left:10px;
-      }
-
-      .navbar-brand{
-        margin-left: 18px;
-      }
-    }
-
     .navbar-brand{
       font-size: 40px;
       background-color: calc();
@@ -64,7 +38,37 @@
       font: bold;
     }
 
+    @media only screen and (max-width: 600px) 
+    {
+      .logo-img{
+        margin-bottom: 20px;
+        margin-left: 170px;
+      }
 
+      .nav-item{
+        width: 100%;
+        margin-left:10px;
+      }
+
+      .navbar-brand{
+        margin-left: 18px;
+      }
+
+      body{
+        background-color: lightyellow;
+      }
+    }
+    
+    @media screen and (min-width: 600px){
+      body{
+        background-image: url('images/background_image.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 100% 100%;
+        font-family: 'Montserrat';
+      }
+    }
     .logo-img{
       width: 150px;
       height: 150px;
@@ -104,7 +108,7 @@
   <div class="header">
     <nav class="navbar navbar-expand-md navbar-primary">
         <!-- Brand -->
-        <img src="images/logo.jpgz" class="logo-img" alt="logo">
+        <img src="images/logo.jpg" class="logo-img" alt="logo">
         <button class="navbar-brand"><a href="https://www.thesparksfoundationsingapore.org/" class="nav-link">The Sparks Foundation</a></button>
       
         <!-- Navbar links -->
